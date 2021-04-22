@@ -1,6 +1,6 @@
 import { add, add2 } from './add';
 
-describe(add.name, () => {
+xdescribe(add.name, () => {
     it('test 1', () => {
         // act
         const result = add(1, 2);
@@ -18,7 +18,7 @@ describe(add.name, () => {
     });
 });
 
-describe(add2.name, () => {
+xdescribe(add2.name, () => {
     // console.log(add2(2,3));
     it('test 1', () => {
         // arrange
