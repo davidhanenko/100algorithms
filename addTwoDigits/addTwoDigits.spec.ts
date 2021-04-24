@@ -1,6 +1,6 @@
 import { addTwoDigits } from './addTwoDigits';
 
-describe(addTwoDigits.name, () => {
+xdescribe(addTwoDigits.name, () => {
     it('Test 1', () => {
         // arrange
         const data = 29;
