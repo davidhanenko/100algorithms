@@ -9,4 +9,4 @@ export function adjacentElementsProduct(inputArray: number[]): number {
 
   return maxProduct;
 }
-console.log(adjacentElementsProduct([3, 6, -2, -5, 7, 3]));
+// console.log(adjacentElementsProduct([3, 6, -2, -5, 7, 3]));
