@@ -12,11 +12,10 @@ export function arrayMaxConsecutiveSum(
   for (let i = k; i < inputArray.length; i++) {
     currentSum = currentSum - inputArray[j] + inputArray[i];
     j++;
-    if (maxSum <= currentSum) {
-      maxSum = currentSum;
-    }
+ 
+      return Math.max(maxSum, currentSum);
   }
-  return maxSum;
+ 
 }
 
 console.log(arrayMaxConsecutiveSum([2, 3, 5, 1, 6], 2));
