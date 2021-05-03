@@ -3,7 +3,7 @@ export function arrayMaxConsecutiveSum(
   k: number
 ): number {
   let currentSum = 0;
-  let maxSum;
+  let maxSum: number;
   for (let i = 0; i < k; i++) {
     currentSum += inputArray[i];
   }
@@ -12,10 +12,8 @@ export function arrayMaxConsecutiveSum(
   for (let i = k; i < inputArray.length; i++) {
     currentSum = currentSum - inputArray[j] + inputArray[i];
     j++;
- 
-      return Math.max(maxSum, currentSum);
+    return Math.max(maxSum, currentSum);
   }
- 
 }
 
 console.log(arrayMaxConsecutiveSum([2, 3, 5, 1, 6], 2));
