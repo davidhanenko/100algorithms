@@ -1,5 +1,5 @@
 export function centuryFromYear(year: number): number {
-  return Math.ceil(year / 100);
+  return year % 100 !== 0 ? Math.ceil(year / 100) : year / 100;
 }
 
 console.log(centuryFromYear(1905));
