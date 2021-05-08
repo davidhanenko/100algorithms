@@ -1,6 +1,6 @@
 import { candies } from './candies';
 
-describe(candies.name, () => {
+xdescribe(candies.name, () => {
     it('Test 1', () => {
         // arrange
         const n = 3;
