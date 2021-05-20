@@ -1,6 +1,6 @@
 import { chunkyMonkey } from './chunkyMonkey';
 
-describe(chunkyMonkey.name, () => {
+xdescribe(chunkyMonkey.name, () => {
     it('Test 1', () => {
         // arrange
         const data = ['a', 'b', 'c', 'd'];
