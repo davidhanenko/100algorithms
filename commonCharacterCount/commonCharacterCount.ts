@@ -12,10 +12,6 @@ export function commonCharacterCount(s1: string, s2: string): number {
     obj2[k] ? obj2[k]++ : (obj2[k] = 1);
   }
 
-  console.log(obj1);
-  console.log(obj2);
-  
-
   for (let k in obj2) {
     if (obj1.hasOwnProperty(k)) {
       obj1[k] <= obj2[k] ? common+= obj1[k] : common+= obj2[k]
