@@ -3,12 +3,12 @@ import { composeRanges } from './composeRanges';
 describe(composeRanges.name, () => {
     it('Test 1', () => {
         // arrange
-        const data = [-1, 0, 1, 2, 6, 7, 9];
+        const data = [-1, 0, 1, 2, 4, 6, 7, 9];
 
         // act
         const response = composeRanges(data);
 
         // assert 
-        expect(response).toEqual(["-1->2", "6->7", "9"]);
+        expect(response).toEqual(["-1->2", "4", "6->7", "9"]);
     });
 });
