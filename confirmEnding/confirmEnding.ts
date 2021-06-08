@@ -3,5 +3,5 @@ export function confirmEnding(str: string, target: string) {
   return str.substring(target.length-1) === target;
 }
 
-console.log(confirmEnding("Abstraction", "action"));
-console.log(confirmEnding("Open sesame", "pen"));
+// console.log(confirmEnding("Abstraction", "action"));
+// console.log(confirmEnding("Open sesame", "pen"));
