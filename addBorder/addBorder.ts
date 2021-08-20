@@ -1,10 +1,7 @@
 export function addBorder(picture: string[]): string[] {
-  const borderBase = '*'.repeat(picture[0].length);
+  const borderBase = '*'.repeat(picture[0].length +2);
 
-  picture.unshift(borderBase);
-  picture.push(borderBase);
-
-  return picture.map(el => `*${el}*`);
+  return [ borderBase, ...picture.map(el => (el = `*${el}*`)), borderBase];
 }
 
-// console.log(addBorder(['abc', 'ded']));
+console.log(addBorder(['abc', 'ded']));
