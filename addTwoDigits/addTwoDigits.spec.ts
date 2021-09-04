@@ -12,3 +12,4 @@ xdescribe(addTwoDigits.name, () => {
         expect(response).toBe(11);
     });
 });
+ // return String(n).split('').reduce((acc, el) => acc + +el, 0)
