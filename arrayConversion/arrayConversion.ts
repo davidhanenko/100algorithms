@@ -1,20 +1,20 @@
 export function arrayConversion(inputArray: number[]): number {
   let iteration = 1;
-  let iterations = inputArray.length / 2;
+  let iterations = inputArray.length / 2 - 1;
 
-  for (let i = 0; i < iterations - 1; i++) {
+  for (let i = 0; i < iterations; i++) {
     if (iteration % 2 !== 0) {
-      inputArray = sum(inputArray, iteration);
+      inputArray = sum(inputArray);
       iteration++;
     } else {
-      inputArray = prod(inputArray, iteration);
+      inputArray = prod(inputArray);
       iteration++;
     }
   }
   return inputArray[0];
 }
 
-const sum = (arr, iteration) => {
+const sum = arr => {
   let tempArr = [];
   for (let i = 1; i < arr.length; i += 2) {
     tempArr.push(arr[i] + arr[i - 1]);
@@ -22,7 +22,7 @@ const sum = (arr, iteration) => {
   return tempArr;
 };
 
-const prod = (arr, iteration) => {
+const prod = arr => {
   let tempArr = [];
   for (let i = 1; i < arr.length; i += 2) {
     tempArr.push(arr[i] * arr[i - 1]);
