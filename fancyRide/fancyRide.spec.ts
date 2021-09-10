@@ -1,6 +1,6 @@
 import { fancyRide } from './fancyRide';
 
-describe(fancyRide.name, () => {
+xdescribe(fancyRide.name, () => {
     it('Test 1', () => {
         // arrange
         const l = 30;
