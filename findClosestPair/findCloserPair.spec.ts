@@ -1,6 +1,6 @@
 import { findClosestPair } from './findClosestPair';
 
-describe(findClosestPair.name, () => {
+xdescribe(findClosestPair.name, () => {
     it('Test 1', () => {
         // arrange
         const numbers = [1, 0, 2, 4, 3, 0];
