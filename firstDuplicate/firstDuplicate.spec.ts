@@ -1,6 +1,6 @@
 import { firstDuplicate } from './firstDuplicate';
 
-describe(firstDuplicate.name, () => {
+xdescribe(firstDuplicate.name, () => {
     it('Test 1', () => {
         // arrange
         const data = [2, 1, 3, 5, 3, 2];
