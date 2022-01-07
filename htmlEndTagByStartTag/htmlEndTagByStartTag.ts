@@ -1,10 +1,10 @@
 export function htmlEndTagByStartTag(startTag: string): string {
-  let arr = startTag.split('');
-  arr.splice(1, 0, '/');
+ let openTag = startTag.split(' ')[0].split('');
 
-  arr = arr.join('').split(' ')[0];
-
-  return arr[arr.length - 1] === '>' ? arr : (arr += '>');
+  openTag.splice( 1, 0, '/' );
+  openTag[openTag.length-1] === '>' ? openTag :  openTag.push( '>' );
+  return openTag.join( '' );
+  
 }
 
 // console.log(htmlEndTagByStartTag("<button type='button' disabled>"));

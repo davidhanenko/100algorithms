@@ -1,5 +1,12 @@
-export function incrementalBackups(lastBackupTime: number, changes: number[][]): number[] {
+export function incrementalBackups( lastBackupTime: number, changes: number[][] ): number[] {
+  const res = [];
+  changes.sort( ( a, b ) => a[1] - b[1] );
+  changes = changes.filter(el => el[0] > lastBackupTime);
 
+  changes.forEach( el => {
+   if(!res.includes(el[1])) res.push(el[1]) 
+  })
+  return res;
 }
 
 // console.log(incrementalBackups(461620205, [[461620203, 1], 
