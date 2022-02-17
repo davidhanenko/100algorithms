@@ -1,6 +1,6 @@
 import { mostFrequentDigitSum } from './mostFrequentDigitSum';
 
-xdescribe(mostFrequentDigitSum.name, () => {
+describe(mostFrequentDigitSum.name, () => {
     it('Test 1', () => {
         // arrange
         const data = 88;

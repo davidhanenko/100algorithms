@@ -16,4 +16,4 @@ export function minimalNumberOfCoins(
   return res;
 }
 
-console.log(minimalNumberOfCoins([1, 2, 10], 28));
+// console.log(minimalNumberOfCoins([1, 2, 10], 28));

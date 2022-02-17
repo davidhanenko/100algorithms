@@ -1,5 +1,5 @@
 export function alphabeticShift(inputString: string): string {
-  let alphabet = [...Array(26).keys()].map(i => String.fromCharCode(i + 97));
+  const alphabet = [...Array(26).keys()].map(i => String.fromCharCode(i + 97));
 
    let arrayFromString = inputString.split('');
 
