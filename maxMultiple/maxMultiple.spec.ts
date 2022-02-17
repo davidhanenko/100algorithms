@@ -1,6 +1,6 @@
 import { maxMultiple } from './maxMultiple';
 
-describe(maxMultiple.name, () => {
+xdescribe(maxMultiple.name, () => {
     it('Test 1', () => {
         // arrange
         const divisor = 3;

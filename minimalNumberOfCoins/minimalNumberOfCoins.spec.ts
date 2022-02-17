@@ -1,6 +1,6 @@
 import { minimalNumberOfCoins } from './minimalNumberOfCoins';
 
-xdescribe(minimalNumberOfCoins.name, () => {
+describe(minimalNumberOfCoins.name, () => {
     it('Test 1', () => {
         // arrange
         const coins = [1, 2, 10];
