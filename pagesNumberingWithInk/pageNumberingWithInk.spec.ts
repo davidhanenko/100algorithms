@@ -3,7 +3,7 @@ import { pagesNumberingWithInk } from './pagesNumberingWithInk';
 xdescribe(pagesNumberingWithInk.name, () => {
     it('Test 1', () => {
         // arrange
-        const current = 21;
+        const current = 21; 
         const numberOfDigits = 5;
 
         // act
