@@ -1,6 +1,6 @@
 import { properNounCorrection } from './properNounCorrection';
 
-describe(properNounCorrection.name, () => {
+xdescribe(properNounCorrection.name, () => {
     it('Test 1', () => {
         // arrange
         const noun = 'pARiS'

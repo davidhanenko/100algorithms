@@ -5,5 +5,5 @@ export function properNounCorrection(noun: string): string {
     .concat(noun.slice(1).toLowerCase());
 }
 
-console.log(properNounCorrection('pARiS'));
-console.log(properNounCorrection('John'));
+// console.log(properNounCorrection('pARiS'));
+// console.log(properNounCorrection('John'));
